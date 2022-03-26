@@ -23,6 +23,7 @@ const Search: React.FC = () => {
 
     
     const handleSubmit = (event: any) => {
+        if(!valueSearch) return;
         if(event.key === 'Enter'){
             getMovieBySearchParam(valueSearch)
             .then((response) => dispatch(addMovies(response.data.Search)))
