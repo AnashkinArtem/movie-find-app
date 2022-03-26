@@ -1,5 +1,4 @@
 {
-  "homepage": "https://anashkinartem.github.io/movie-app.github.io",
   "name": "react-project",
   "version": "1.0.0",
   "private": "false",
@@ -10,9 +9,7 @@
     "start:dev": "webpack serve",
     "build": "webpack --mode production",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test:coverage": "jest --coverage"
   },
   "author": "artem1anashkin@gmail.com",
   "license": "ISC",
