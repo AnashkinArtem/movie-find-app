@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Search component Should be render component Search 1`] = `
+<div>
+  <div
+    class="search__wrapper"
+  >
+    <input
+      class="header__input__search"
+      placeholder="What do you want to watch?"
+      type="text"
+    />
+    <button
+      class="header__btn__search"
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;

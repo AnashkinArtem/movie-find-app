@@ -1,0 +1,25 @@
+.header__title{
+    padding-left: 70px;
+    color: white;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font-size: 56px;
+    @media (max-width: 768px){
+        font-size: 48px; 
+        margin-bottom: 25px;
+    }
+    @media (max-width: 526px){
+        padding: 0; 
+        text-align: center;
+        font-size: 44px; 
+        margin-bottom: 35px;
+    }
+    @media (max-width: 426px){
+        font-size: 38px; 
+        margin-bottom: 45px;
+    }
+    @media (max-width: 362px){
+        font-size: 34px; 
+        margin-bottom: 25px;
+    }
+}

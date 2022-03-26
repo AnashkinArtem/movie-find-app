@@ -1,0 +1,14 @@
+@import '../../variables';
+
+
+.main__wrapper {
+    background-color: $main-dark-grey-color;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: $main-white-color;
+    min-height: 300px;
+}

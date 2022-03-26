@@ -1,0 +1,41 @@
+.card{
+    position: relative;
+    width: 210px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.card__poster{
+    display: flex;
+    padding: 5px;
+    width: 200px;
+    height: 290px;
+}
+
+.zoom{
+    &:hover{
+        transform: scale(1.08);
+        transition: .6s ease;
+        cursor: pointer;
+        filter: brightness(50%)
+    }   
+}
+
+.after{
+    &::after{
+        content: '';
+        position: absolute;
+        top: 5%;
+        left: 95%;
+        width: 20px;
+        height: 20px;
+        background-color: aliceblue;
+    }
+}

@@ -1,0 +1,9 @@
+svg {
+    width: 55px;
+    height: 45px;
+    &:hover{
+        transform: scaleX(-1);
+        transition: all .7s ease-in;
+        fill:  #fa2d3e;
+    }
+}

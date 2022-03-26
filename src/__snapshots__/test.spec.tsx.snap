@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App component render 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-17v5bpf"
+  >
+    <header>
+      <div
+        class="MuiBox-root css-k22go4"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-md-2 css-1o7apob-MuiGrid-root"
+          >
+            <h1>
+              FinderPOST
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-md-10 css-c2hb4-MuiGrid-root"
+          >
+            <button
+              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-lig31o-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              + ADD
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-1gr7pos-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+          >
+            <h1>
+              FIND YOUR POST:
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item css-pwm727-MuiGrid-root"
+          >
+            <div
+              class="MuiFormControl-root MuiTextField-root inputSearch css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+            >
+              <label
+                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-15k609j-MuiFormLabel-root-MuiInputLabel-root"
+                data-shrink="false"
+                for="outlined-basic"
+                id="outlined-basic-label"
+              >
+                Type something...
+              </label>
+              <div
+                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1sbh3pu-MuiInputBase-root-MuiOutlinedInput-root"
+              >
+                <input
+                  aria-invalid="false"
+                  class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  id="outlined-basic"
+                  type="text"
+                  value=""
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                >
+                  <legend
+                    class="css-173wfxe"
+                  >
+                    <span>
+                      Type something...
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+            <button
+              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root button css-lig31o-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              SEARCH
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+`;
