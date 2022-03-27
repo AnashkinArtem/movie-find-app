@@ -2,19 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getMovieBySearchParam } from 'src/api/apiMovies';
 import { addMovies } from 'src/redux/actions/actions';
-import BsCursorText from 'react-icons'
 import styles from './styles.module.scss'
 
 const Search: React.FC = () => {
 
     const [valueSearch, setValueSearch] = useState('');
     const dispatch = useDispatch();
+    const err = ['']
 
     const handleClick = () => {
         if(!valueSearch) return;
         getMovieBySearchParam(valueSearch)
             .then((response) => dispatch(addMovies(response.data.Search)))
-            setValueSearch('')
+            .then((response) => console.log(response))
+            setValueSearch('')            
     }
     
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,8 +27,9 @@ const Search: React.FC = () => {
         if(!valueSearch) return;
         if(event.key === 'Enter'){
             getMovieBySearchParam(valueSearch)
-            .then((response) => dispatch(addMovies(response.data.Search)))
-            setValueSearch('')
+            .then((response) => dispatch(addMovies(response.data.Search)))           
+            .catch(() => dispatch(addMovies(err)))
+            setValueSearch('')           
         }  
     }
 
