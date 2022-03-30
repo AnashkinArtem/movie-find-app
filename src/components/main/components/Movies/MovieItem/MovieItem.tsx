@@ -19,7 +19,7 @@ const MovieItem: React.FC<IProps> = ({ Poster, Title, Year, imdbID, Type}): JSX.
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        maxWidth: 370,
+        maxWidth: 320,
         width: '100%',
         background: 'linear-gradient(to right, #654ea3, #eaafc8)',
         borderRadius: '5px',
@@ -89,7 +89,7 @@ const MovieItem: React.FC<IProps> = ({ Poster, Title, Year, imdbID, Type}): JSX.
                     loading="lazy"
                />
             </ImageListItem>
-                <Typography id="modal-modal-title" sx={{ mt: 1, fontWeight: 700, color: 'white' }} variant="h4" component="h1">
+                <Typography id="modal-modal-title" sx={{ mt: 1, fontWeight: 700, color: 'white' }} variant="h5" component="h1">
                     {Title}
                 </Typography>
                 <Typography id="modal-modal-description" sx={{ mt: 1, fontWeight: 700, color: 'white' }}>

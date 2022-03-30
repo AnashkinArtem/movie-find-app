@@ -1,7 +1,6 @@
 import React from "react";
 import { Movie } from 'src/utils/interfaces/interfaces';
 import MovieItem from '../MovieItem/MovieItem';
-import { Modal, Button, Box, Typography, } from '@mui/material';
 
 interface IProps {
     movies: Movie[];

@@ -1,0 +1,61 @@
+.resource__btn__open{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px;
+    width: 130px;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background: #d45757b6;
+    color: #eeeded;
+    .eye__icon{
+        display: block;
+        content: url(/assets/icons/eye.svg);
+        width: 25px;
+        fill: white;
+    }    
+    &:hover{
+        transition: all .7s ease;
+        cursor: pointer;
+        background: #fa2d3e;
+        color: white;
+    }
+    @media (max-width: 362px){
+        width: 110px;
+        height: 40px;
+    }
+}
+.resource__btn__close{
+    position: absolute;
+    top: -0.5%;
+    left: 102%;
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+    @media (max-width: 426px){
+        top: 100%;
+        left: 50%;
+    }
+}
+
+.modal__wrapper{
+    transition: .3s ease-in;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: absolute;
+    background: #222725;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+    min-width: 300px;
+    width: 48%;
+    min-height: 180px;
+    border-radius: 0 0 10px 10px;
+    gap: 20px;
+}

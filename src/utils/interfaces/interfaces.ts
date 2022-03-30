@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 interface Movie {
     id: number;
     key: number;
@@ -9,7 +7,16 @@ interface Movie {
     Type: string;
     Poster: string;
 }
+
+interface Resource {
+    id: number;
+    key: number;
+    Title: string;
+    Logo: string;
+    Link: string;
+}
   
 export {
-    Movie
+    Movie,
+    Resource
 }

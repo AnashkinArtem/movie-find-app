@@ -14,24 +14,24 @@ const Search: React.FC = () => {
         if(!valueSearch) return;
         getMovieBySearchParam(valueSearch)
             .then((response) => dispatch(addMovies(response.data.Search)))
-            .then((response) => console.log(response))
-            setValueSearch('')            
-    }
-    
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setValueSearch(event.target.value);
+            .catch(() => dispatch(addMovies(err)))
+            setValueSearch('')      
     }
 
-    
     const handleSubmit = (event: any) => {
         if(!valueSearch) return;
         if(event.key === 'Enter'){
             getMovieBySearchParam(valueSearch)
-            .then((response) => dispatch(addMovies(response.data.Search)))           
-            .catch(() => dispatch(addMovies(err)))
+            .then((response) => dispatch(addMovies(response.data.Search)))  
+            .catch(() => dispatch(addMovies(err)))       
             setValueSearch('')           
         }  
     }
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setValueSearch(event.target.value);
+    }   
+
 
     return(
         <div className={styles.search__wrapper}>
